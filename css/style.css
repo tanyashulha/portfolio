@@ -45,36 +45,11 @@ body {
 
 #main-slider .swiper-wrapper .swiper-slide .slide-first .slide-first-name {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "GillSans-Light", sans-serif;
-    opacity: 0.7;
     letter-spacing: 1px;
-    margin: 10px 0 20px;
+    margin: 30px 0 10px;
     text-align: center;
-}
-
-#main-slider .swiper-wrapper .swiper-slide .slide-first .slide-first-git {
-    color: #ffffff;
-    font-size: 16px;
-    font-family: "GillSans-Light", sans-serif;
-    opacity: 0.5;
-    letter-spacing: 1px;
-    margin: 0 0 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease-in;
-}
-
-#main-slider .swiper-wrapper .swiper-slide .slide-first .slide-first-git:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-#main-slider .swiper-wrapper .swiper-slide .slide-first .slide-first-git i {
-    font-size: 20px;
-    margin-right: 5px;
-    transition: 0.3s ease-in;
 }
 
 #main-slider .swiper-wrapper .swiper-slide .slide-first  .social {
@@ -83,9 +58,9 @@ body {
 }
 
 #main-slider .swiper-wrapper .swiper-slide .slide-first  .social a {
-    margin: 0 10px;
+    margin: 0 7px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     opacity: 0.5;
     transition: 0.3s ease-in;
 }
@@ -97,7 +72,7 @@ body {
 
 #main-slider .swiper-wrapper .swiper-slide .slide-first .switch {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
