@@ -1,0 +1,13 @@
+/*Fonts*/
+
+@font-face {
+    font-family: "GillSans-Bold";
+    src: url("../assets/fonts/GillSansBold.woff") format("woff"), 
+    url("../assets/fonts/GillSansBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GillSans-Light";
+    src: url("../assets/fonts/GillSans-Light.woff") format("woff"), 
+    url("../assets/fonts/GillSans-Light.woff2") format("woff2");
+}
