@@ -55,6 +55,38 @@ a {
   margin: 0 auto;
 }
 
+.view-buttons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 5%;
+  bottom: 5%;
+  z-index: 99;
+}
+
+.view-buttons .view-button,
+.view-buttons .link-button {
+  background-color: #f1f506;
+  border: none;
+  color: #726017;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  box-shadow: -2px -2px 0px 0px rgba(63, 53, 13, 0.3);
+}
+
+.view-buttons .view-button:hover,
+.view-buttons .link-button:hover {
+  opacity: 0.8;
+}
+
 /*Header*/
 
 header {
