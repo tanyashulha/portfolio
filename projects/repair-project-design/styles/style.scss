@@ -12,35 +12,6 @@ body {
     margin: 0 auto;
     cursor: default;
 }
-
-.view-buttons {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    right: 5%;
-    bottom: 12%;
-    z-index: 99;
-    .view-button,
-    .link-button {
-      background-color: transparent;
-      border: 1px solid $primary-color;
-      color: $primary-color;
-      font-family: $font-family-primary;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5px 20px;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      font-size: $x-large;
-      cursor: pointer;
-      transition: $transition-nav;
-      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        &:hover {
-            border: 1px solid $text-color-medium;
-        }
-    }
-}
   
 .container {
     width: 1236px;

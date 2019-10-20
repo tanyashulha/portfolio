@@ -313,6 +313,52 @@ body {
     display: none;
 }
 
+.adaptive-iframe {
+    width: 640px !important;
+    left: calc((100% - 640px) / 2);
+}
+
+.project-iframe-theyalow {
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+.view-buttons {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 5%;
+    bottom: 5%;
+    z-index: 99;
+}
+  
+.view-buttons .view-button,
+.view-buttons .link-button {
+    background-color: transparent;
+    border: 1px solid #E3B873;
+    color: #726017;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    box-shadow: -2px -2px 0px 0px rgba(63, 53, 13, 0.3);
+    outline: none;
+}
+  
+.view-buttons .view-button:hover,
+.view-buttons .link-button:hover {
+    opacity: 0.8;
+}
+
 @media(max-width: 767.98px) {
     #main-slider .swiper-wrapper .swiper-slide .second-slide .second-slide-descr .descr-block {
         padding: 10px;

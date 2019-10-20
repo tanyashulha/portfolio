@@ -37,7 +37,7 @@ toggleButtons.forEach( (toggleButton) => {
   toggleButton.addEventListener('click', function() {
     toggleButton.innerHTML =
       (toggleButton.innerHTML === 'show') ? toggleButton.innerHTML = 'close' : toggleButton.innerHTML = 'show';
-  })
+   })
   toggleButton.onclick = () => {
     toggleButton.classList.toggle('active');
     let showDescriptions = [...document.getElementsByClassName('show-description')];
@@ -46,3 +46,4 @@ toggleButtons.forEach( (toggleButton) => {
     })
   }
 })
+
