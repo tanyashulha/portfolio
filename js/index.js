@@ -1,6 +1,5 @@
 "use strict";
 
-
 //Main slider
 const mainSlider = new Swiper('#main-slider', {
   direction: 'vertical',
@@ -20,9 +19,9 @@ document.getElementById('click-block').onclick = function() {
   document.getElementById('result').classList.toggle('slide-descr-active');
 }
 
-//Projects
+//Projects slider
 
-var swiper = new Swiper('#projects', {
+const swiper = new Swiper('#projects', {
   slidesPerView: 1,
   mousewheel: true,
   navigation: {
@@ -30,3 +29,20 @@ var swiper = new Swiper('#projects', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+//Show description on click for mobile
+
+let toggleButtons = [...document.getElementsByClassName('show')];
+toggleButtons.forEach( (toggleButton) => {
+  toggleButton.addEventListener('click', function() {
+    toggleButton.innerHTML =
+      (toggleButton.innerHTML === 'show') ? toggleButton.innerHTML = 'close' : toggleButton.innerHTML = 'show';
+  })
+  toggleButton.onclick = () => {
+    toggleButton.classList.toggle('active');
+    let showDescriptions = [...document.getElementsByClassName('show-description')];
+    showDescriptions.forEach((showDescription) => {
+      showDescription.classList.toggle('active');
+    })
+  }
+})
