@@ -1,0 +1,58 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+
+.wrapper-mobile-slider {
+    display: none;
+    margin-bottom: 36px;
+    background: no-repeat 50% / cover;
+    height: 260px;
+    position: relative;
+        @include for-tablet-portrait-up  {
+            display: flex;
+        }
+        @include for-phone-only {
+            height: 240px;
+            margin-bottom: 0;
+        }
+      .nav-adaptive-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 92%;
+        top: 50%;
+        margin: 0 4%;
+        transform: translateY(-50%);
+        .nav-button {
+            background-color: $primary-color;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            transition: $transition-nav;
+            position: relative;
+            .right {
+                position: absolute;
+                border-right: 2px solid $text-color-light; 
+                border-bottom: 2px solid $text-color-light;
+                height: 6px;
+                width: 6px;
+                top: 40%;
+                right: 40%;
+                transform: rotate(-45deg); 
+            }
+            .left {
+                position: absolute;
+                border-right: 2px solid $text-color-light; 
+                border-bottom: 2px solid $text-color-light;
+                height: 6px;
+                width: 6px;
+                top: 40%;
+                left: 40%;
+                transform: rotate(135deg); 
+            }
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+    }
+}

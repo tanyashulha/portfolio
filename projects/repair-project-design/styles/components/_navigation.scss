@@ -1,0 +1,72 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+
+.navigation {
+  margin-right: 67px;
+    @include for-desktop {
+      margin-right: 35px;
+    } 
+    @include for-desktop-up {
+      margin-right: 15px;
+    } 
+    @include for-tablet-landscape-up {
+        display: none;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      .menu-item {
+          margin-right: 47px;
+          @include for-desktop {
+              margin-right: 25px;
+          }
+          @include for-desktop-up {
+            margin-right: 10px;
+          }
+          &:last-child {
+              margin-right: 0;
+          }
+          .menu-item-link {
+              font-family: $font-family-primary;
+              font-size: $xx-small;
+              color: $text-color-light;
+              text-transform: uppercase;
+              transition: $transition-nav;
+              &:hover {
+                  color: $primary-color;
+              }
+              @include for-desktop-up {
+                  font-size: $extra-small;
+              }
+          }
+      }
+      .menu-item.is-active {
+          .menu-item-link {
+              color: $primary-color;
+          }
+      }
+  }
+}
+.phone {
+  color: $primary-color;
+  font-family: $font-family-secondary;
+  font-size: $xx-small;
+  text-decoration: underline; 
+  margin-right: 45px;
+  transition: $transition-nav;
+  &:hover {
+    color: $text-color-light;
+  }
+  @include for-desktop-up {
+    margin-right: 20px;
+  }
+  @include for-tablet-portrait-up {
+    margin-right: 0;
+    color: $text-color-light;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

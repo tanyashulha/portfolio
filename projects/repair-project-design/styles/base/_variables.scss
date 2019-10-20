@@ -1,0 +1,37 @@
+@import '_fonts';
+
+//Font sizes
+
+$extra-small: 13px;
+$xx-small: 14px;
+$x-small: 15px;
+$small: 16px;
+$medium: 18px;
+$large: 20px;
+$x-large: 22px;
+$xx-large: 27px;
+$super-large: 40px;
+
+//Colors
+
+$primary-color: #E3B873;
+$text-color-light: #ffffff;
+$placeholder-color: rgba(54, 54, 54, 0.5);
+$menu-color: #959595;
+$name-color: #181818;
+$text-color-medium: #363636;
+$background-color: #131313;
+$color-dark: #000000;
+$color-bg-adaptive: #252525;
+
+//Font family
+
+$font-family-primary: "FuturaBookC", sans-serif;
+$font-family-secondary: "FuturaDemiC", sans-serif;
+$font-family-medium: "FuturaMediumC", sans-serif;
+$font-family-tabs: "ProximaNova-RegularCondensed", sans-serif;
+$font-family-title: "YesevaOne", sans-serif;
+
+//Transitions
+
+$transition-nav: 0.3s ease-in;

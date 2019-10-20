@@ -1,0 +1,25 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+
+.subtitle {
+  @include section-subtitle;
+  width: 50%;
+  position: relative;
+  margin-bottom: 34px;
+  @include for-tablet-portrait-up {
+    text-align: center;
+    margin: 0 auto 22px;
+  }
+  &::after {
+    position: absolute;
+    content:'';
+    width: 92px;
+    height: 1px;
+    background-color: $primary-color;
+    top: 75%;
+    right: -35%;
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+
+.logo {
+  text-decoration: none;
+  font-family: $font-family-secondary;
+  font-size: $xx-small;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-right: 95px;
+  @include for-desktop {
+    margin-right: 45px;
+  }
+  @include for-desktop-up {
+    margin-right: 25px; 
+  }
+  @include for-tablet-portrait-up {
+    margin: 0;
+  }
+}

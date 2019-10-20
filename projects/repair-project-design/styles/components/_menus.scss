@@ -1,0 +1,122 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+
+.descr-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 3;
+  @include for-tablet-portrait-up {
+    flex-direction: column;
+  }
+  .descr-block-child {
+    width: 32%;
+    position: relative;
+    @include for-tablet-portrait-up {
+      width: 100%;
+      height: 600px;
+    }
+    @include for-phone-only {
+      height: 584px;
+    }
+    .descr-block-child-img {
+      width: 100%;
+      height: 420px;
+      background: no-repeat 50% / cover;
+      @include for-desktop-up {
+        height: 350px;
+      }
+      @include for-tablet-landscape-up {
+        display: none;
+      }
+      @include for-tablet-portrait-up {
+        display: block;
+      }
+      @include for-phone-only {
+        height: 365px;
+      }
+    }
+    .descr-block-child-info {
+      position: absolute;
+      top: 65%;
+      left: 30px;
+      right: 30px;
+      background-color: $text-color-light;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+        @include for-tablet-landscape-up {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          border: 1px solid $primary-color;
+        }
+        @include for-tablet-portrait-up {
+          position: absolute;
+          top: 200px;
+          left: 0;
+          right: 20%;
+          border: none;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        @include for-phone-only {
+          top: 38%;
+        }
+        .child-title {
+          font-family: $font-family-title;
+          font-size: $medium;
+          color: $text-color-medium;
+          margin-bottom: 15px;
+          padding: 25px 0 0 34px;
+          @include for-phone-only {
+            fot-size: $x-small;
+            padding: 21px 0 0 31px;
+            margin-bottom: 10px;
+          }
+        }
+      .descr-block-navigation {
+          margin-bottom: 25px;
+          padding: 0 0 55px 34px;   
+          @include for-tablet-landscape-up {
+            padding: 0 0 20px 20px;
+          }         
+          @include for-phone-only {
+            padding: 0 0 30px 20px;
+            margin-bottom: 0;
+          }
+            .menu-item {
+              padding-left: 20px;
+              @include for-phone-only {
+                margin: 0;
+              }
+                .item {
+                  font-family: $font-family-primary;
+                  font-size: $x-small;
+                  margin-bottom: 10px;
+                  color: $menu-color;                                
+                }
+            }
+        }
+        .repair-cost {
+          background-color: $primary-color;
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
+          font-family: $font-family-title;
+          font-size: $medium;
+          text-transform: uppercase;
+          color: $text-color-light;
+          padding: 17px 18px;
+          position: absolute;
+          bottom: -27px;
+          @include for-tablet-landscape-up {
+            font-size: $xx-small;
+          }
+          @include for-phone-only {
+            font-size: $xx-small;
+            padding: 12px 18px;
+            bottom: -20px;
+          }
+        }
+      }
+    }
+}
